@@ -1,0 +1,8 @@
+# Dependencies
+numpy==latest
+pandas==latest
+azure.cognitiveservices.vision.computervision==latest
+msrest.authentication==latest
+mlxtend.preprocessing==latest
+mlxtend.frequent_patterns ==latest
+dotenv==latest
