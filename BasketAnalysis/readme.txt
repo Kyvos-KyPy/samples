@@ -10,8 +10,8 @@ This demo is conducted through an Anaconda/Jupyter notebook: Computer_Vision_Dem
 4. Edit the following keys in the .env file:
    4a. COMPUTER_VISION_KEY="Your Azure Computer Vision Key"
    4b. COMPUTER_VISION_ENDPOINT="Your Azure Computer Vision Endpoint"
-   4c. COMPUTER_VISION_IMAGE_PATH="C:/samples-main/BasketAnalysis/images/"
-   4d. COMPUTER_VISION_SAVE_DATA_PATH="any directory on your machine"
+   4c. Directory where images we wish to crack are stored: COMPUTER_VISION_IMAGE_PATH="C:/samples-main/BasketAnalysis/BasketImages/"
+   4d. Directory where the basket analysis data files are creates: COMPUTER_VISION_SAVE_DATA_PATH="any existing directory on your machine"
 5. Open an Anaconda prompt.
 6. Enter the command: jupyter lab --notebook-dir=c:\samples-main\BasketAnalysis
 
