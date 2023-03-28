@@ -16,3 +16,7 @@ This demo is conducted through an Anaconda/Jupyter notebook: Computer_Vision_Dem
 6. Enter the command: jupyter lab --notebook-dir=c:\samples-main\BasketAnalysis
 
 Please contact me at eugene.asahara@kyvos.io if you have any questions.
+
+Notes:
+
+I had a problem with the .env file. I removed quotes and it seemed to work.
