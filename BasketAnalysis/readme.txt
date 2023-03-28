@@ -8,8 +8,8 @@ This demo is conducted through an Anaconda/Jupyter notebook: Computer_Vision_Dem
 1. Install Anaconda.
 2. Set up an Azure Computer Vision resource.
    2a. Retrieve a key and the endpoint for the Azure Computer Vision Resource.
-3. Download the samples repository into c:\samples-main. 
-   3a. Be sure the c:\samples-main\BasketAnalysis files are there.
+3. Download the samples github repository as a zip and extract into c:\samples-main. 
+   3a. Be sure the c:\samples-main\BasketAnalysis files are there in the same structure as it is in github.
 4. Ensure the Python packages in the requirements.txt file are installed.
 5. Edit the following keys in the .env file:
    5a. COMPUTER_VISION_KEY="Your Azure Computer Vision Key"
@@ -18,6 +18,8 @@ This demo is conducted through an Anaconda/Jupyter notebook: Computer_Vision_Dem
    5d. Directory where the basket analysis data files are creates: COMPUTER_VISION_SAVE_DATA_PATH="any existing directory on your machine"
 6. Open an Anaconda prompt.
    6a. Enter the command: jupyter lab --notebook-dir=c:\samples-main\BasketAnalysis
+7. When the Anaconda lab window opens, open Computer_Vision_Demo.ipynb.
+   7a. You can run the entire demo or one cell at a time (in order).
 
 Please contact me at eugene.asahara@kyvos.io if you have any questions.
 
