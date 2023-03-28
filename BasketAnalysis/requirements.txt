@@ -4,4 +4,5 @@ pandas==latest
 azure-core==latest
 azure.cognitiveservices.vision.computervision==latest
 mlxtend==latest
-python-dotenv==latest
+python.dotenv==latest
+msrest=latest
