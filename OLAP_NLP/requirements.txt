@@ -1,0 +1,10 @@
+# Dependencies
+numpy==latest
+pandas==latest
+azure-core==latest
+numbers==latest
+random==latest
+json==latest
+azure.ai.language.conversations==latest
+azure.cognitiveservices.speech==latest
+python.dotenv==latest
