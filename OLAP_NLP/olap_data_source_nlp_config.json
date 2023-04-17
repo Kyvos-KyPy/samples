@@ -1,0 +1,18 @@
+{
+    "data_source":{"cubeSchema":"Your OLAP Schema", "cubeName":"Your OLAP Cube or Table","dsn":"Your DSN Name"},
+    "language_model_name":"demo_lang_model",
+    "selected_filters":[
+        {"class":["Whiskey","Vodka","Gin","Tequila","Brandy","Schnapps"]},
+        {"high_alcohol":["Yes","No"]},
+        {"Imported":["Domestic","Imported"]},
+        {"price_category":["Top Shelf","Moderate","Expensive","Bottom Shelf","Economical"]},
+        {"County":["Adair","DUBUQUE","CERRO GORD","Black Hawk","Johnson"]},
+        {"Zip Code":["52240","50613","50703","52241","52001","50702","50428","50701","50401","52002","52003"]}
+    ],
+    "selected_facets":["class","Category","high_alcohol","Imported","price_category","County","Zip Code"],
+    "selected_measures":["bottles_sold","volume_sales_liters", "sale_dollars","Cost","invoice_item_number"],
+    "order_by_measure":"sale_dollars"
+}
+
+
+
