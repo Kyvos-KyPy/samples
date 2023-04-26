@@ -3,6 +3,7 @@
     "language_deploy_name":"demo_lang_model",
     "language_project_name":"demo_lang_model",
     "language_encoding":"en-us",
+    "date_attribute":"datekey",
     "selected_filters":{
         "class":["Whiskey","Vodka","Gin","Tequila","Brandy","Schnapps"],
         "high_alcohol":["Yes","No"],
