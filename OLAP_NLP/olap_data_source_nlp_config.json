@@ -1,18 +1,32 @@
 {
     "data_source":{"cubeSchema":"Your OLAP Schema", "cubeName":"Your OLAP Cube or Table","dsn":"Your DSN Name"},
-    "language_model_name":"demo_lang_model",
-    "selected_filters":[
-        {"class":["Whiskey","Vodka","Gin","Tequila","Brandy","Schnapps"]},
-        {"high_alcohol":["Yes","No"]},
-        {"Imported":["Domestic","Imported"]},
-        {"price_category":["Top Shelf","Moderate","Expensive","Bottom Shelf","Economical"]},
-        {"County":["Adair","DUBUQUE","CERRO GORD","Black Hawk","Johnson"]},
-        {"Zip Code":["52240","50613","50703","52241","52001","50702","50428","50701","50401","52002","52003"]}
-    ],
-    "selected_facets":["class","Category","high_alcohol","Imported","price_category","County","Zip Code"],
-    "selected_measures":["bottles_sold","volume_sales_liters", "sale_dollars","Cost","invoice_item_number"],
-    "order_by_measure":"sale_dollars"
+    "language_deploy_name":"demo_lang_model",
+    "language_project_name":"demo_lang_model",
+    "language_encoding":"en-us",
+    "selected_filters":{
+        "class":["Whiskey","Vodka","Gin","Tequila","Brandy","Schnapps"],
+        "high_alcohol":["Yes","No"],
+        "Imported":["Domestic","Imported"],
+        "price_category":["Top Shelf","Moderate","Expensive","Bottom Shelf","Economical"],
+        "County":["Adair","DUBUQUE","CERRO GORD","Black Hawk","Johnson"],
+        "Zip_Code":["52240","50613","50703","52241","52001","50702","50428","50701","50401","52002","52003"]
+    },
+    "selected_facets":["Store", "store_number", "class", "Category", "high_alcohol", "Imported", "price_category", "County", "Zip Code"],
+    "selected_measures":["bottles_sold", "volume_sales_liters", "sale_dollars", "Cost", "invoice_item_number"],
+    "default_measure":"sale_dollars",
+    "json_filename":"C:/temp/demo_lang_model.json",
+    "member_synonyms":{
+        "sale_dollars":["sales","sales amount"],
+        "Cost":["expense"],
+        "Whiskey":["Whisky","whisky"],
+        "invoice_item_number":["Count","count"],
+        "bottles_sold":["bottles","Bottles","units"],
+        "volume_sales_liters":["liters"],
+        "Top Shelf":["best"],
+        "Economical":["cheap","cheapest"],
+        "Yes":["high proof"],
+        "Imported":["overseas"]
+    }
 }
-
 
 
