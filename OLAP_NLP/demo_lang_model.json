@@ -1,0 +1,1667 @@
+{
+  "projectFileVersion": "2022-10-01-preview",
+  "stringIndexType": "Utf16CodeUnit",
+  "metadata": {
+    "projectKind": "Conversation",
+    "settings": {
+      "confidenceThreshold": 0.0
+    },
+    "projectName": "demo_lang_model",
+    "multilingual": false,
+    "description": "demo_lang_model",
+    "language": "en-us"
+  },
+  "assets": {
+    "projectKind": "Conversation",
+    "intents": [
+      {
+        "category": "simple_query"
+      },
+      {
+        "category": "list_objects"
+      }
+    ],
+    "entities": [
+      {
+        "category": "dates",
+        "compositionSetting": "combineComponents",
+        "prebuilts": [
+          {
+            "category": "DateTime"
+          }
+        ]
+      },
+      {
+        "category": "object",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "intents",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "command",
+                    "commands",
+                    "intents",
+                    "intent"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "cubes",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "cube",
+                    "cubes",
+                    "Cubes"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "measures",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "measure",
+                    "measures",
+                    "Measure"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "dimensions",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "dimension",
+                    "dimensions",
+                    "Dimensions"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "order_cmd",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "order_cmd",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "sort by",
+                    "ordered by",
+                    "order by",
+                    "sorted by"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "measure",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "bottles_sold",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Bottles Sold",
+                    "bottles sold",
+                    "units",
+                    "Bottles",
+                    "bottles",
+                    "bottles_sold"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "volume_sales_liters",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "volume sales liters",
+                    "Volume Sales Liters",
+                    "liters",
+                    "volume_sales_liters"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "sale_dollars",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Sale Dollars",
+                    "sales amount",
+                    "sale_dollars",
+                    "sales",
+                    "sale dollars"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Cost",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "expense",
+                    "Cost",
+                    "cost"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "invoice_item_number",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "invoice_item_number",
+                    "invoice item number",
+                    "Count",
+                    "Invoice Item Number",
+                    "count"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "Store_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Store",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "store",
+                    "Store"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "store_number_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "store_number",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "store number",
+                    "store_number",
+                    "Store Number"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "class",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Whiskey",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Whiskey",
+                    "whisky",
+                    "Whisky",
+                    "whiskey"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Vodka",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "vodka",
+                    "Vodka"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Gin",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Gin",
+                    "gin"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Tequila",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "tequila",
+                    "Tequila"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Brandy",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "brandy",
+                    "Brandy"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Schnapps",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Schnapps",
+                    "schnapps"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "class_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "class",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Class",
+                    "class"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "Category_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Category",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "category",
+                    "Category"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "high_alcohol",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Yes",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "yes",
+                    "Yes",
+                    "high proof"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "No",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "no",
+                    "No"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "high_alcohol_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "high_alcohol",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "high alcohol",
+                    "high_alcohol",
+                    "High Alcohol"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "Imported",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Domestic",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Domestic",
+                    "domestic"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Imported",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "imported",
+                    "Imported",
+                    "overseas"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "Imported_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Imported",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "imported",
+                    "Imported",
+                    "overseas"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "price_category",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Top Shelf",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Top Shelf",
+                    "top shelf",
+                    "best"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Moderate",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Moderate",
+                    "moderate"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Expensive",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "expensive",
+                    "Expensive"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Bottom Shelf",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "bottom shelf",
+                    "Bottom Shelf"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Economical",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "economical",
+                    "cheapest",
+                    "cheap",
+                    "Economical"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "price_category_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "price_category",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "price category",
+                    "Price Category",
+                    "price_category"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "County",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Adair",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Adair",
+                    "adair"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "DUBUQUE",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Dubuque",
+                    "dubuque",
+                    "DUBUQUE"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "CERRO GORD",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Cerro Gord",
+                    "CERRO GORD",
+                    "cerro gord"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Black Hawk",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "black hawk",
+                    "Black Hawk"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "Johnson",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Johnson",
+                    "johnson"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "County_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "County",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "County",
+                    "county"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "Zip Code",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "52240",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "52240"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "50613",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "50613"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "50703",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "50703"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "52241",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "52241"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "52001",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "52001"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "50702",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "50702"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "50428",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "50428"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "50701",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "50701"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "50401",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "50401"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "52002",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "52002"
+                  ]
+                }
+              ]
+            },
+            {
+              "listKey": "52003",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "52003"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "category": "Zip Code_facet",
+        "compositionSetting": "combineComponents",
+        "list": {
+          "sublists": [
+            {
+              "listKey": "Zip Code",
+              "synonyms": [
+                {
+                  "language": "en-us",
+                  "values": [
+                    "Zip Code",
+                    "zip code"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "utterances": [
+      {
+        "text": "How many invoice_item_number of Moderate did we sell in 2017 ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "measure",
+            "offset": 9,
+            "length": 19
+          },
+          {
+            "category": "price_category",
+            "offset": 32,
+            "length": 8
+          },
+          {
+            "category": "dates",
+            "offset": 56,
+            "length": 4
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "How many bottles_sold of Bottom Shelf did we sell in March 13 2022 ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "measure",
+            "offset": 9,
+            "length": 12
+          },
+          {
+            "category": "price_category",
+            "offset": 25,
+            "length": 12
+          },
+          {
+            "category": "dates",
+            "offset": 53,
+            "length": 13
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "How many invoice_item_number of Imported did we sell in 2017 ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "measure",
+            "offset": 9,
+            "length": 19
+          },
+          {
+            "category": "Imported",
+            "offset": 32,
+            "length": 8
+          },
+          {
+            "category": "dates",
+            "offset": 56,
+            "length": 4
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "How many sale_dollars of 52003 did we sell in last month ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "measure",
+            "offset": 9,
+            "length": 12
+          },
+          {
+            "category": "Zip Code",
+            "offset": 25,
+            "length": 5
+          },
+          {
+            "category": "dates",
+            "offset": 46,
+            "length": 10
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Tell me the total invoice_item_number of Imported and Gin in 2017 by Imported ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "measure",
+            "offset": 18,
+            "length": 19
+          },
+          {
+            "category": "Imported",
+            "offset": 41,
+            "length": 8
+          },
+          {
+            "category": "class",
+            "offset": 54,
+            "length": 3
+          },
+          {
+            "category": "dates",
+            "offset": 61,
+            "length": 4
+          },
+          {
+            "category": "Imported_facet",
+            "offset": 69,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "What is the amounts of sale_dollars and Cost of Yes and 50703 ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "measure",
+            "offset": 23,
+            "length": 12
+          },
+          {
+            "category": "measure",
+            "offset": 40,
+            "length": 4
+          },
+          {
+            "category": "high_alcohol",
+            "offset": 48,
+            "length": 3
+          },
+          {
+            "category": "Zip Code",
+            "offset": 56,
+            "length": 5
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "By high_alcohol and class how many Cost of CERRO GORD did we sell ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "high_alcohol_facet",
+            "offset": 3,
+            "length": 12
+          },
+          {
+            "category": "class_facet",
+            "offset": 20,
+            "length": 5
+          },
+          {
+            "category": "measure",
+            "offset": 35,
+            "length": 4
+          },
+          {
+            "category": "County",
+            "offset": 43,
+            "length": 10
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "By high_alcohol and class how many volume_sales_liters of Tequila did we sell ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "high_alcohol_facet",
+            "offset": 3,
+            "length": 12
+          },
+          {
+            "category": "class_facet",
+            "offset": 20,
+            "length": 5
+          },
+          {
+            "category": "measure",
+            "offset": 35,
+            "length": 19
+          },
+          {
+            "category": "class",
+            "offset": 58,
+            "length": 7
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "By County and class how many volume_sales_liters of Imported did we sell ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "County_facet",
+            "offset": 3,
+            "length": 6
+          },
+          {
+            "category": "class_facet",
+            "offset": 14,
+            "length": 5
+          },
+          {
+            "category": "measure",
+            "offset": 29,
+            "length": 19
+          },
+          {
+            "category": "Imported",
+            "offset": 52,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "In Janary 2017 how much volume_sales_liters do we have of class ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 3,
+            "length": 11
+          },
+          {
+            "category": "measure",
+            "offset": 24,
+            "length": 19
+          },
+          {
+            "category": "class_facet",
+            "offset": 58,
+            "length": 5
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "In last year how much volume_sales_liters do we have of Store ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 3,
+            "length": 9
+          },
+          {
+            "category": "measure",
+            "offset": 22,
+            "length": 19
+          },
+          {
+            "category": "Store_facet",
+            "offset": 56,
+            "length": 5
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "In last month how much sale_dollars do we have of store_number ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 3,
+            "length": 10
+          },
+          {
+            "category": "measure",
+            "offset": 23,
+            "length": 12
+          },
+          {
+            "category": "store_number_facet",
+            "offset": 50,
+            "length": 12
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "During 2017 by Zip Code and class what is the total Cost of Domestic ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 7,
+            "length": 4
+          },
+          {
+            "category": "Zip Code_facet",
+            "offset": 15,
+            "length": 8
+          },
+          {
+            "category": "class_facet",
+            "offset": 28,
+            "length": 5
+          },
+          {
+            "category": "measure",
+            "offset": 52,
+            "length": 4
+          },
+          {
+            "category": "Imported",
+            "offset": 60,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "During last year by high_alcohol and County what is the total bottles_sold of 50703 ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 7,
+            "length": 9
+          },
+          {
+            "category": "high_alcohol_facet",
+            "offset": 20,
+            "length": 12
+          },
+          {
+            "category": "County_facet",
+            "offset": 37,
+            "length": 6
+          },
+          {
+            "category": "measure",
+            "offset": 62,
+            "length": 12
+          },
+          {
+            "category": "Zip Code",
+            "offset": 78,
+            "length": 5
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "During last year by Imported and Imported what is the total sale_dollars of Top Shelf ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 7,
+            "length": 9
+          },
+          {
+            "category": "Imported_facet",
+            "offset": 20,
+            "length": 8
+          },
+          {
+            "category": "Imported_facet",
+            "offset": 33,
+            "length": 8
+          },
+          {
+            "category": "measure",
+            "offset": 60,
+            "length": 12
+          },
+          {
+            "category": "price_category",
+            "offset": 76,
+            "length": 9
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "During last month by Category and Category what is the total volume_sales_liters of 50703 ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 7,
+            "length": 10
+          },
+          {
+            "category": "Category_facet",
+            "offset": 21,
+            "length": 8
+          },
+          {
+            "category": "Category_facet",
+            "offset": 34,
+            "length": 8
+          },
+          {
+            "category": "measure",
+            "offset": 61,
+            "length": 19
+          },
+          {
+            "category": "Zip Code",
+            "offset": 84,
+            "length": 5
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "During last month by County and Imported what is the total volume_sales_liters of Yes ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 7,
+            "length": 10
+          },
+          {
+            "category": "County_facet",
+            "offset": 21,
+            "length": 6
+          },
+          {
+            "category": "Imported_facet",
+            "offset": 32,
+            "length": 8
+          },
+          {
+            "category": "measure",
+            "offset": 59,
+            "length": 19
+          },
+          {
+            "category": "high_alcohol",
+            "offset": 82,
+            "length": 3
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "During Janary 2017 by store_number and Category what is the total Cost of No ? ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "dates",
+            "offset": 7,
+            "length": 11
+          },
+          {
+            "category": "store_number_facet",
+            "offset": 22,
+            "length": 12
+          },
+          {
+            "category": "Category_facet",
+            "offset": 39,
+            "length": 8
+          },
+          {
+            "category": "measure",
+            "offset": 66,
+            "length": 4
+          },
+          {
+            "category": "high_alcohol",
+            "offset": 74,
+            "length": 2
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Retrieve by Imported volume_sales_liters for Imported and 50701 ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "Imported_facet",
+            "offset": 12,
+            "length": 8
+          },
+          {
+            "category": "measure",
+            "offset": 21,
+            "length": 19
+          },
+          {
+            "category": "Imported",
+            "offset": 45,
+            "length": 8
+          },
+          {
+            "category": "Zip Code",
+            "offset": 58,
+            "length": 5
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Retrieve by class Cost for Whiskey and Domestic ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "class_facet",
+            "offset": 12,
+            "length": 5
+          },
+          {
+            "category": "measure",
+            "offset": 18,
+            "length": 4
+          },
+          {
+            "category": "class",
+            "offset": 27,
+            "length": 7
+          },
+          {
+            "category": "Imported",
+            "offset": 39,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Retrieve by store_number sale_dollars for 52240 and Imported ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "store_number_facet",
+            "offset": 12,
+            "length": 12
+          },
+          {
+            "category": "measure",
+            "offset": 25,
+            "length": 12
+          },
+          {
+            "category": "Zip Code",
+            "offset": 42,
+            "length": 5
+          },
+          {
+            "category": "Imported",
+            "offset": 52,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Generate a summary of price_category for CERRO GORD during 2017 ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "price_category_facet",
+            "offset": 22,
+            "length": 14
+          },
+          {
+            "category": "County",
+            "offset": 41,
+            "length": 10
+          },
+          {
+            "category": "dates",
+            "offset": 59,
+            "length": 4
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Retrieve by Store Cost for CERRO GORD and Domestic ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "Store_facet",
+            "offset": 12,
+            "length": 5
+          },
+          {
+            "category": "measure",
+            "offset": 18,
+            "length": 4
+          },
+          {
+            "category": "County",
+            "offset": 27,
+            "length": 10
+          },
+          {
+            "category": "Imported",
+            "offset": 42,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Retrieve by Imported bottles_sold for CERRO GORD and No ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "Imported_facet",
+            "offset": 12,
+            "length": 8
+          },
+          {
+            "category": "measure",
+            "offset": 21,
+            "length": 12
+          },
+          {
+            "category": "County",
+            "offset": 38,
+            "length": 10
+          },
+          {
+            "category": "high_alcohol",
+            "offset": 53,
+            "length": 2
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Retrieve by high_alcohol sale_dollars for 52241 and Bottom Shelf ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "high_alcohol_facet",
+            "offset": 12,
+            "length": 12
+          },
+          {
+            "category": "measure",
+            "offset": 25,
+            "length": 12
+          },
+          {
+            "category": "Zip Code",
+            "offset": 42,
+            "length": 5
+          },
+          {
+            "category": "price_category",
+            "offset": 52,
+            "length": 12
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "Retrieve by County and Store the volume_sales_liters for Brandy 52240 and Yes ",
+        "language": "en-us",
+        "intent": "simple_query",
+        "entities": [
+          {
+            "category": "County_facet",
+            "offset": 12,
+            "length": 6
+          },
+          {
+            "category": "Store_facet",
+            "offset": 23,
+            "length": 5
+          },
+          {
+            "category": "measure",
+            "offset": 33,
+            "length": 19
+          },
+          {
+            "category": "class",
+            "offset": 57,
+            "length": 6
+          },
+          {
+            "category": "Zip Code",
+            "offset": 64,
+            "length": 5
+          },
+          {
+            "category": "high_alcohol",
+            "offset": 74,
+            "length": 3
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "list the cubes ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 9,
+            "length": 5
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "list the dimensions ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 9,
+            "length": 10
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "list the intents ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 9,
+            "length": 7
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "list the measures ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 9,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "what are my dimensions ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 12,
+            "length": 10
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "what are my intents ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 12,
+            "length": 7
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "what are my measures ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 12,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "name the dimensions ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 9,
+            "length": 10
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "name the measures ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 9,
+            "length": 8
+          }
+        ],
+        "dataset": "Train"
+      },
+      {
+        "text": "name the cubes ",
+        "language": "en-us",
+        "intent": "list_objects",
+        "entities": [
+          {
+            "category": "object",
+            "offset": 9,
+            "length": 5
+          }
+        ],
+        "dataset": "Train"
+      }
+    ]
+  }
+}
